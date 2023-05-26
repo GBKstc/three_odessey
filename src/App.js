@@ -1,8 +1,11 @@
 import './App.css';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import { Suspense, lazy } from 'react';
+import {HashRouter as Router, Routes, Route} from 'react-router-dom';
+import {Suspense, lazy} from 'react';
 
 const Home = lazy(() => import('@/containers/Home/index'));
+const Human = lazy(() => import('@/containers/Human/index'));
+const Cube = lazy(() => import('@/containers/Cube/index'));
+const Star = lazy(() => import('@/containers/Star/index'));
 const City = lazy(() => import('@/containers/City/index'));
 const Earth = lazy(() => import('@/containers/Earth/index'));
 const EarthDigital = lazy(() => import('@/containers/EarthDigital/index'));
@@ -13,7 +16,6 @@ const Car = lazy(() => import('@/containers/Car/index'));
 const Zelda = lazy(() => import('@/containers/Zelda/index'));
 const Metaverse = lazy(() => import('@/containers/Metaverse/index'));
 const SegmentFault = lazy(() => import('@/containers/SegmentFault/index'));
-const Human = lazy(() => import('@/containers/Human/index'));
 const Olympic = lazy(() => import('@/containers/Olympic/index'));
 const Comic = lazy(() => import('@/containers/Comic/index'));
 const Live = lazy(() => import('@/containers/Live/index'));
@@ -37,37 +39,39 @@ function App() {
     <div className="App">
       <Router>
         <Suspense fallback={<div className='loading_page'>Loading...</div>}>
-        <Routes>
-          <Route element={ <Home /> } path="/" />
-          <Route element={ <City /> } path="/city" />
-          <Route element={ <Earth /> } path="/earth" />
-          <Route element={ <EarthDigital /> } path='earthDigital' />
-          <Route element={ <Demo /> } path="/demo" />
-          <Route element={ <Lunar /> } path="/lunar" />
-          <Route element={ <Cell /> } path="/cell" />
-          <Route element={ <Car /> } path="/car" />
-          <Route element={ <Zelda /> } path="/zelda" />
-          <Route element={ <Metaverse /> } path="/metaverse" />
-          <Route element={ <SegmentFault /> } path="/segmentfault" />
-          <Route element={ <Human /> } path="/human" />
-          <Route element={ <Olympic /> } path="/olympic" />
-          <Route element={ <Comic /> } path="/comic" />
-          <Route element={ <Live /> } path="/live" />
-          <Route element={ <Floating /> } path="/floating" />
-          <Route element={ <Heart /> } path="/heart" />
-          <Route element={ <Ring /> } path="/ring" />
-          <Route element={ <Scroll /> } path="/scroll" />
-          <Route element={ <Ocean /> } path="/ocean" />
-          <Route element={ <Farm /> } path="/farm" />
-          <Route element={ <Mine /> } path="/mine" />
-          <Route element={ <Tennis /> } path="/tennis" />
-          <Route element={ <Shadow /> } path="/shadow" />
-          <Route element={ <Fans /> } path="/fans" />
-          <Route element={ <Gravity />} path="/gravity" />
-          <Route element={ <RickAndMorty />} path="/rickAndMorty" />
-          <Route element={ <Flag />} path="/flag" />
-          <Route element={ <ShaderPattern />} path="/shaderPattern" />
-        </Routes>
+          <Routes>
+            <Route element={<Home/>} path="/"/>
+            <Route element={<Human/>} path="/human"/>
+            <Route element={<Cube/>} path="/cube"/>
+            <Route element={<Star/>} path="/star"/>
+            {/*<Route element={ <City /> } path="/city" />*/}
+            {/*<Route element={ <Earth /> } path="/earth" />*/}
+            {/*<Route element={ <EarthDigital /> } path='earthDigital' />*/}
+            {/*<Route element={ <Demo /> } path="/demo" />*/}
+            {/*<Route element={ <Lunar /> } path="/lunar" />*/}
+            {/*<Route element={ <Cell /> } path="/cell" />*/}
+            {/*<Route element={ <Car /> } path="/car" />*/}
+            {/*<Route element={ <Zelda /> } path="/zelda" />*/}
+            {/*<Route element={ <Metaverse /> } path="/metaverse" />*/}
+            {/*<Route element={ <SegmentFault /> } path="/segmentfault" />*/}
+            {/*<Route element={ <Olympic /> } path="/olympic" />*/}
+            {/*<Route element={ <Comic /> } path="/comic" />*/}
+            {/*<Route element={ <Live /> } path="/live" />*/}
+            {/*<Route element={ <Floating /> } path="/floating" />*/}
+            {/*<Route element={ <Heart /> } path="/heart" />*/}
+            {/*<Route element={ <Ring /> } path="/ring" />*/}
+            {/*<Route element={ <Scroll /> } path="/scroll" />*/}
+            {/*<Route element={ <Ocean /> } path="/ocean" />*/}
+            {/*<Route element={ <Farm /> } path="/farm" />*/}
+            {/*<Route element={ <Mine /> } path="/mine" />*/}
+            {/*<Route element={ <Tennis /> } path="/tennis" />*/}
+            {/*<Route element={ <Shadow /> } path="/shadow" />*/}
+            {/*<Route element={ <Fans /> } path="/fans" />*/}
+            {/*<Route element={ <Gravity />} path="/gravity" />*/}
+            {/*<Route element={ <RickAndMorty />} path="/rickAndMorty" />*/}
+            {/*<Route element={ <Flag />} path="/flag" />*/}
+            {/*<Route element={ <ShaderPattern />} path="/shaderPattern" />*/}
+          </Routes>
         </Suspense>
       </Router>
     </div>
