@@ -10,7 +10,7 @@ import {
 
 // const THREE = window.THREE;
 
-export default class Human extends React.Component {
+export default class Cube extends React.Component {
 
   componentDidMount() {
     this.initThree()

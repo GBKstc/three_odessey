@@ -12556,6 +12556,11 @@ text-table@^0.2.0:
   resolved "https://registry.npmjs.org/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
 
+three-obj-mtl-loader@^1.0.3:
+  version "1.0.3"
+  resolved "http://verdaccio.iwoo365.com/three-obj-mtl-loader/-/three-obj-mtl-loader-1.0.3.tgz#2901efd5b77cce29b61733c63f196432ee653667"
+  integrity sha512-0z7BfyG6vYPY9RvxJvL4rq8PbNrF42Kn4zxeqTfeDzJN++2oKbtCQhxHs5vLULnDuCRTEyDFf5TYvO+1vnJ7KQ==
+
 three@^0.136.0:
   version "0.136.0"
   resolved "https://registry.npmjs.org/three/-/three-0.136.0.tgz#b1504db021b46398ef468aa7849f3dcabb814f50"
