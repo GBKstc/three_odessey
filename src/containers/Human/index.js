@@ -57,7 +57,7 @@ export default class Human extends React.Component {
     scene.add(ambientLight);
 
     const headGroup = new THREE.Group();
-    
+
     // 头部模型
     const ctmLoader = new THREE.CTMLoader();
     ctmLoader.load(headModal, geometry => {
